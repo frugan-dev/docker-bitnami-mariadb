@@ -1,0 +1,23 @@
+version: '3.7'
+
+services:
+
+  mariadb:
+    container_name: ${MARIADB_NAME}
+    build:
+      context: .
+      args:
+        MARIADB_TAG: ${MARIADB_TAG}
+    restart: unless-stopped
+    security_opt:
+      - no-new-privileges:true
+    networks:
+      - default
+    environment:
+      #MARIADB_EXTRA_FLAGS: '--max-connect-errors=1000 --max_connections=155'
+      ALLOW_EMPTY_PASSWORD: ${MARIADB_ALLOW_EMPTY_PASSWORD}
+      MARIADB_ROOT_USER: ${MARIADB_ROOT_USER}
+      MARIADB_ROOT_PASSWORD: ${MARIADB_ROOT_PASSWORD}
+      MARIADB_USER: ${MARIADB_USER}
+      MARIADB_PASSWORD: ${MARIADB_PASSWORD}
+      MARIADB_DATABASE: ${MARIADB_DATABASE}
