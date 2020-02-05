@@ -1,8 +1,16 @@
-## Unreleased
+## [Unreleased](https://github.com/frugan-it/docker-bitnami-mariadb/compare/v1.0.0...HEAD)
 
 ### Commits
 
-- Initial commit 
+- Updated ARG and ENV variables [`d8ecceb`](https://github.com/frugan-it/docker-bitnami-mariadb/commit/d8ecceb16d4d07bdcddbe5442bdbc2ca88c602f8)
+- Merge tag 'v1.0.0' into develop [`9f413d6`](https://github.com/frugan-it/docker-bitnami-mariadb/commit/9f413d6b0a3f06bfe92faa9a2eea29d88cb66d0e)
+
+## v1.0.0 - 2020-02-03
+
+### Commits
+
+- Initial commit [`9163ece`](https://github.com/frugan-it/docker-bitnami-mariadb/commit/9163ece466c765e9db769afdc2fd1579e806ce73)
+- Updated CHANGELOG [`231ff7c`](https://github.com/frugan-it/docker-bitnami-mariadb/commit/231ff7c1c0ec16cf0d7e2c698c280bc193286b0a)
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/)
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
