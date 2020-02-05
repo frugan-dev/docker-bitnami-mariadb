@@ -9,4 +9,6 @@
 
 ARG MARIADB_TAG
 
-FROM bitnami/mariadb:${MARIADB_TAG:-latest}
+ENV MARIADB_TAG=${MARIADB_TAG:-latest}
+
+FROM bitnami/mariadb:${MARIADB_TAG}
